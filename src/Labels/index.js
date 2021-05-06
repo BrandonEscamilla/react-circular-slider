@@ -64,7 +64,7 @@ const Labels = ({
 				style={{ ...styles.value, ...(!labelBottom && styles.bottomMargin) }}>
 				<code>
 					<span style={styles.prepended}>{prependToValue}</span>
-					{value}
+					{typeof value === "string" ? "-" : value}
 					<span style={styles.appended}>{appendToValue}</span>
 				</code>
 			</div>
